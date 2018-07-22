@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NiceCheckbox renders the checkbox with correct label 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "color": "#eee",
+      "fontSize": "2rem",
+      "padding": 40,
+    }
+  }
+>
+  <div
+    className="btn btn-primary"
+  >
+    Home
+  </div>
+</button>
+`;
+
+exports[`NiceCheckbox renders the checkbox with correct label 2`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "color": "#eee",
+      "fontSize": "2rem",
+      "padding": 40,
+    }
+  }
+>
+  <div
+    className="btn btn-primary"
+  >
+    Home
+  </div>
+</button>
+`;
