@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/murdock/.nvm/versions/node/v8.11.1/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js dev
+  /Users/murdock/.nvm/versions/node/v8.11.1/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js test
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/murdock/.nvm/versions/node/v8.11.1/bin
@@ -58,7 +58,7 @@ npm manifest:
       "@types/body-parser": "^1.17.0",
       "@types/express": "^4.16.0",
       "@types/jest": "^23.1.4",
-      "@types/next": "^2.4.11",
+      "@types/next": "^6.0.4",
       "@types/next-redux-wrapper": "^1.4.2",
       "@types/react": "^16.0.36",
       "@types/react-redux": "^6.0.3",
@@ -73,6 +73,7 @@ npm manifest:
       "compile-typescript-cli": "0.0.6",
       "enzyme": "^3.3.0",
       "enzyme-adapter-react-16": "^1.1.1",
+      "enzyme-to-json": "^3.3.4",
       "fork-ts-checker-webpack-plugin": "^0.4.2",
       "friendly-errors-webpack-plugin": "^1.7.0",
       "gulp": "^3.9.1",
@@ -80,6 +81,7 @@ npm manifest:
       "gulp-sourcemaps": "^2.6.4",
       "gulp-stylus": "^2.7.0",
       "jest": "^23.3.0",
+      "jest-styled-components": "^5.0.1",
       "postcss-filters": "^0.0.2",
       "postcss-flexbugs-fixes": "^3.3.1",
       "postcss-selector-not": "^3.0.1",
@@ -1243,12 +1245,19 @@ Lockfile:
       "@types/react-redux" "*"
       redux "^3.6.0"
   
-  "@types/next@^2.4.11":
-    version "2.4.12"
-    resolved "https://registry.yarnpkg.com/@types/next/-/next-2.4.12.tgz#fb85497ca7d5be9a3f603c6642b77dca5de2cb6e"
+  "@types/next@^6.0.4":
+    version "6.0.4"
+    resolved "https://registry.yarnpkg.com/@types/next/-/next-6.0.4.tgz#37c01ce5675d77c3f1154ff22357e4a80cc91066"
     dependencies:
       "@types/node" "*"
+      "@types/node-fetch" "*"
       "@types/react" "*"
+  
+  "@types/node-fetch@*":
+    version "2.1.2"
+    resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.1.2.tgz#8c5da14d70321e4c4ecd5db668e3f93cf6c7399f"
+    dependencies:
+      "@types/node" "*"
   
   "@types/node@*":
     version "10.5.2"
@@ -4287,6 +4296,12 @@ Lockfile:
       object.assign "^4.0.4"
       prop-types "^15.6.0"
   
+  enzyme-to-json@^3.3.4:
+    version "3.3.4"
+    resolved "https://registry.yarnpkg.com/enzyme-to-json/-/enzyme-to-json-3.3.4.tgz#67c6040e931182f183418af2eb9f4323258aa77f"
+    dependencies:
+      lodash "^4.17.4"
+  
   enzyme@^3.3.0:
     version "3.3.0"
     resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.3.0.tgz#0971abd167f2d4bf3f5bd508229e1c4b6dc50479"
@@ -6365,6 +6380,12 @@ Lockfile:
       natural-compare "^1.4.0"
       pretty-format "^23.2.0"
       semver "^5.5.0"
+  
+  jest-styled-components@^5.0.1:
+    version "5.0.1"
+    resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-5.0.1.tgz#386c5a161a0f5e783444d624bfc18c6d228d1277"
+    dependencies:
+      css "^2.2.1"
   
   jest-util@^23.3.0:
     version "23.3.0"
@@ -10772,7 +10793,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c yarn css && yarn compile:server --watch --run
+  Arguments: -c jest
   Directory: /Users/murdock/lab/custom-server-typescript
   Output:
   

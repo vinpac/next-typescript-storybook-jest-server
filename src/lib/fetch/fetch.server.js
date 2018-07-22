@@ -1,4 +1,4 @@
-import { APP_URL } from '~/core/constants'
+import { APP_URL } from '../core/constants'
 import {
   fetch as defaultFetch,
   fetchJSON as defaultFetchJSON,

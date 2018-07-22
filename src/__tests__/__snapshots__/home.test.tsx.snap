@@ -1,9 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home shoud match snapshot 1`] = `
-<div
-  className="home__Page-s1vyf8dg-0 juXuCH"
->
+.c1 {
+  width: 150px;
+  margin: 0 5px;
+}
+
+.c2 {
+  border-radius: 50%;
+  background: #111;
+  line-height: 28px;
+  color: #fff;
+  margin-right: 24px;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+
+.c0 {
+  height: 24px;
+  width: 28px;
+  display: block;
+  margin-right: 10px;
+}
+
+.c0 > svg {
+  margin-top: 5px;
+}
+
+.c0:hover > svg > g > g {
+  stroke: #900;
+}
+
+<div>
   <style>
     body{background:radial-gradient( circle,#d7d7d7,#d7d7d7 1px,#fff 1px,#fff );background-size:28px 28px;}
   </style>
@@ -14,7 +44,7 @@ exports[`Home shoud match snapshot 1`] = `
       className="navbar px-0 navbar-expand-md navbar-light"
     >
       <a
-        className="home__Logo-s1vyf8dg-3 jGHnzn"
+        className="c0"
         href="/"
       >
         <svg
@@ -159,7 +189,7 @@ exports[`Home shoud match snapshot 1`] = `
       <h2
         className="tw-normal mb-3"
       >
-        Now + GitHub 2
+        Now + GitHub
       </h2>
       <p
         className="mb-4 ts-medium tc-muted"
@@ -167,12 +197,12 @@ exports[`Home shoud match snapshot 1`] = `
         Automatic deployments on every pull request. Just push.
       </p>
       <button
-        className="btn btn--size-medium btn-primary tw-normal home__JumbotronButton-s1vyf8dg-1 dCaGjg"
+        className="btn btn--size-medium btn-primary tw-normal c1"
       >
         Setup now
       </button>
       <button
-        className="btn btn--size-medium tw-normal btn-outline-muted home__JumbotronButton-s1vyf8dg-1 dCaGjg"
+        className="btn btn--size-medium tw-normal btn-outline-muted c1"
       >
         Learn more
       </button>
@@ -184,7 +214,7 @@ exports[`Home shoud match snapshot 1`] = `
         className="card-item media p-3"
       >
         <span
-          className="home__CaptionNumber-s1vyf8dg-2 bNtVW"
+          className="c2"
         >
           1
         </span>
@@ -205,7 +235,7 @@ exports[`Home shoud match snapshot 1`] = `
         className="card-item media p-3"
       >
         <span
-          className="home__CaptionNumber-s1vyf8dg-2 bNtVW"
+          className="c2"
         >
           2
         </span>
@@ -226,7 +256,7 @@ exports[`Home shoud match snapshot 1`] = `
         className="card-item media p-3"
       >
         <span
-          className="home__CaptionNumber-s1vyf8dg-2 bNtVW"
+          className="c2"
         >
           3
         </span>

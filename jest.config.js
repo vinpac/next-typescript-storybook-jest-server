@@ -6,6 +6,7 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'babel-jest',
   },
+  snapshotSerializers: ['enzyme-to-json/serializer'],
   coverageDirectory: '.coverage',
   collectCoverageFrom: [
     'src/components/**/*.{ts,tsx,js,jsx}',
@@ -24,5 +25,5 @@ module.exports = {
     '<rootDir>/node_modules/',
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  collectCoverage: true,
+  collectCoverage: false,
 }
